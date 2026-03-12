@@ -2,12 +2,16 @@
 -이름: 안성철 (25017049)
 -핵심기능: 커서를 피하는 버튼, 클리어 축하메세지 출력, 난이도 조절 기능, 점수 출력, 게임오버 출력, 다시시작
 ## 실행 화면
--1단계/n
+-1단계
+
 ![20260312_163714](https://github.com/user-attachments/assets/ee8f98d9-945f-4c7d-8aa9-504c7d6395b0)
+
 -2단계/n
 ![20260312_165814](https://github.com/user-attachments/assets/e32d3d41-bb43-49be-97eb-5cc300664017)
+
 -3단계/n
 ![20260312_173843](https://github.com/user-attachments/assets/4d72cba2-2f83-4a3f-9e7a-e7d1d6ffa0b1)
+
 -4단계
 ![20260312_180118](https://github.com/user-attachments/assets/5d4b7ece-f464-48f5-9646-e2815697d9ff)
 
