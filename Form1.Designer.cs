@@ -1,6 +1,6 @@
 ﻿namespace CatchButton
 {
-    partial class Form1
+    partial class stage1
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            t_button = new Button();
+            SuspendLayout();
+            // 
+            // t_button
+            // 
+            t_button.BackColor = Color.Black;
+            t_button.ForeColor = Color.White;
+            t_button.Location = new Point(1530, 255);
+            t_button.Name = "t_button";
+            t_button.Size = new Size(348, 145);
+            t_button.TabIndex = 0;
+            t_button.Text = "나를 잡아봐";
+            t_button.UseVisualStyleBackColor = false;
+            t_button.Click += t_button_Click;
+            t_button.MouseEnter += t_button_MouseEnter;
+            // 
+            // stage1
+            // 
+            AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Text = "Form1";
+            ClientSize = new Size(1890, 924);
+            Controls.Add(t_button);
+            Name = "stage1";
+            Text = "버튼 잡기 게임";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button t_button;
     }
 }
