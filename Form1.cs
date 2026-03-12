@@ -6,9 +6,14 @@ namespace CatchButton
         {
             InitializeComponent();
         }
-
+        void restart()
+        {
+            limit = 21;
+            t_button.Enabled = true;
+            t_button.Location = new Point(100, 100);
+        }
         int score = 0;
-        
+        int limit = 21;
         private void t_button_MouseEnter(object sender, EventArgs e)
         {
      
@@ -24,6 +29,15 @@ namespace CatchButton
             int nextY = rd.Next(0, maxY);
             // 4. 위치 할당 (새로운 Point 객체 생성)
             t_button.Location = new Point(nextX, nextY);
+            limit -= 1;
+            if(limit == 0)
+            {
+                MessageBox.Show("게임 오버!, Game Over");
+                t_button.Enabled = false;
+                DialogResult result = MessageBox.Show("다시시작","확인", MessageBoxButtons.YesNo);
+                if(result == DialogResult.Yes) {restart(); }
+            }
+
             if (score > 0){ 
                 score -= 10;
                 t_button.Size = new Size(t_button.Width + t_button.Width * 1/2, t_button.Height + t_button.Height * 1/2);
