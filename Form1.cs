@@ -11,7 +11,7 @@ namespace CatchButton
         {
             // 1. 난수 생성기 준비
             Random rd = new Random();
-            // 2. 가용 영역 계산 (버튼이 폼 테두리에 걸리지 않게 보호)
+            // 2. 가용 영역 계산 (버튼이 폼 테두리에 걸리지 않게 보호)ㄴ
             // ClientSize는 타이틀 바와 테두리를 제외한 실제 흰 도화지 영역임
             int maxX = this.ClientSize.Width - t_button.Width;
             int maxY = this.ClientSize.Height - t_button.Height;
@@ -26,7 +26,7 @@ namespace CatchButton
 
         private void t_button_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("축하합니다~~!", "omedeto");
         }
     }
 }
